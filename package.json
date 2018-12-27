@@ -4,6 +4,7 @@
   "description": "React component that renders a terminal emulator",
   "main": "lib/react-terminal-component.js",
   "scripts": {
+    "postinstall": "postinstall-build-yarn lib",
     "build": "webpack --mode development && webpack --mode production",
     "dev": "webpack --progress --colors --watch --mode development",
     "test": "cross-env NODE_PATH=./src mocha --require babel-core/register --colors './test/**/*.spec.js'",
@@ -63,6 +64,7 @@
     "yargs": "^11.0.0"
   },
   "dependencies": {
+    "postinstall-build-yarn": "0.0.2",
     "prop-types": "^15.6.1",
     "styled-components": "^3.2.3",
     "styled-theming": "^2.2.0"
